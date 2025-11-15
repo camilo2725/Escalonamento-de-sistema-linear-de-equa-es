@@ -163,6 +163,9 @@ public class Escalonamento {
         System.out.println("{ x = " + x);
 
         System.out.println("\nValor das incógnitas: x = " + x + "; y = " + y + "; z = " + z + ";");
+
+        // Fechar scanner:
+        Entrada.close();
     }
 
     // Método para mostrar um sistema para o usuário:
@@ -209,17 +212,11 @@ public class Escalonamento {
                 // Imprime as incógnitas:
                 if(valor != 0) {
                     switch (j) {
-                    case 0:
-                    System.out.print("x");
-                    break;
+                    case 0 -> System.out.print("x");
 
-                    case 1:
-                    System.out.print("y");
-                    break;
+                    case 1 -> System.out.print("y");
 
-                    case 2:
-                    System.out.print("z");
-                    break;
+                    case 2 -> System.out.print("z");
                     }
                 }
 
