@@ -2,7 +2,7 @@
 
 **Faculdade:** UNIFACS – Universidade Salvador  
 **Curso:** Ciência da Computação  
-**Disciplina:** Estrutura Matemáticas
+**Disciplina:** Estrutura Matemáticas    
 **Professora:** Ivana  
 **Data:** 18/11/2025  
 
