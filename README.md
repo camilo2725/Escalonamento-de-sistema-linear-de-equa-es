@@ -11,7 +11,7 @@ matrizes.
 
 **GitHub do Projeto:** https://github.com/camilo2725/Escalonamento-de-sistema-linear-de-equa-es   
 **Relatório  do Projeto:** https://drive.google.com/file/d/1TvQMqY4iORdYK5J8BnCEQLvXkl2HxdLo/view?usp=sharing    
-**apresentação do Projeto:** https://drive.google.com/file/d/1syi1sf1zLM7w51qiugQbhJAzEynOX5Qo/view?usp=sharing    
+**Apresentação do Projeto:** https://drive.google.com/file/d/1syi1sf1zLM7w51qiugQbhJAzEynOX5Qo/view?usp=sharing    
 
 ## Integrantes do Grupo 
 
