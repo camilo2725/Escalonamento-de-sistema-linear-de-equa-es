@@ -1,5 +1,4 @@
-# Projeto de Estrutura Matemáticas – Resolução de sistema de equações lineares através do escalonamento de
-matrizes.
+# Projeto de Estrutura Matemáticas – Resolução de sistema de equações lineares através do escalonamento de matrizes.
 
 **Faculdade:** UNIFACS – Universidade Salvador  
 **Curso:** Ciência da Computação  
