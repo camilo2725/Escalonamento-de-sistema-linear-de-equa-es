@@ -5,13 +5,14 @@
 **Disciplina:** Estrutura Matemáticas    
 **Professora:** Ivana Barreto Matos  
 **Data:** 18/11/2025  
+**Ficha de Acompanhamento do Grupo:** https://drive.google.com/file/d/1fXAb0jbp5d8hl4DNpuzWAj3oKpay9WnT/view?usp=sharing
 
 ---
 
 **GitHub do Projeto:** https://github.com/camilo2725/Escalonamento-de-sistema-linear-de-equa-es   
 **Relatório  do Projeto:** https://drive.google.com/file/d/1iSXXjELywVdBG5BHjO_GiWKKMKg0YpQR/view?usp=sharing      
 **Apresentação do Projeto:** https://drive.google.com/file/d/1syi1sf1zLM7w51qiugQbhJAzEynOX5Qo/view?usp=sharing     
-**Ficha de Acompanhamento do Grupo** https://drive.google.com/file/d/1fXAb0jbp5d8hl4DNpuzWAj3oKpay9WnT/view?usp=sharing
+
 
 ## Integrantes do Grupo 
 
