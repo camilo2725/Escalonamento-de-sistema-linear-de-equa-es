@@ -21,7 +21,7 @@
 | Witan Mendes Paixão Nascimento de Jesus | 12724123796 | Ajuda no código, Powerpoint e Contexto do projeto |
 | Ana Priscilla Silva Oliveira | 1272411739 | Powerpoint e elaboração da apresentação |
 | João Paulo Souza Fontes  | 12724113272 | Relatório e elaboração da apresentação |
-| Marcio (falta sobrenome) | RA | Relatório, Powerpoint e Teste do código |
+| Marcio Lima Ribeiro | 12723222001 | Relatório, Powerpoint e Teste do código |
 
 ---
 
