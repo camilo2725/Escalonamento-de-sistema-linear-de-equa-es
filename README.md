@@ -1,4 +1,4 @@
-    # Projeto de Estrutura Matemáticas – Resolução de sistema de equações lineares através do escalonamento de matrizes.
+# Projeto de Estrutura Matemáticas – Resolução de sistema de equações lineares através do escalonamento de matrizes.
 
 **Faculdade:** UNIFACS – Universidade Salvador  
 **Curso:** Ciência da Computação  
@@ -9,7 +9,7 @@
 ---
 
 **GitHub do Projeto:** https://github.com/camilo2725/Escalonamento-de-sistema-linear-de-equa-es   
-**Relatório  do Projeto:** https://drive.google.com/file/d/1iSXXjELywVdBG5BHjO_GiWKKMKg0YpQR/view?usp=sharing   
+**Relatório  do Projeto:** https://drive.google.com/file/d/1iSXXjELywVdBG5BHjO_GiWKKMKg0YpQR/view?usp=sharing      
 **Apresentação do Projeto:** https://drive.google.com/file/d/1syi1sf1zLM7w51qiugQbhJAzEynOX5Qo/view?usp=sharing    
 
 ## Integrantes do Grupo 
