@@ -13,8 +13,8 @@ public class Escalonamento {
         int linhas =3; int colunas = 4;
 
         // Cria a matriz em si. Como ela representa o sistema de equações, seu nome é "Sistema":
-        float[][] Sistema = new float[linhas][colunas];
-        // DEBUG: float[][] Sistema = {{4,-3,2,-1}, {1,-2,3,-4}, {4,3,2,1}};
+        double[][] Sistema = new double[linhas][colunas];
+        // DEBUG: double[][] Sistema = {{4,-3,2,-1}, {1,-2,3,-4}, {4,3,2,1}};
 
         // Começa a entrada dos valores do sistema por parte do usuário:
         System.out.println("-- Entrada das equações do sistema --");
@@ -60,7 +60,7 @@ public class Escalonamento {
                     A linha utilizada terá a mesma numeração que a da coluna atual.
                     */
 
-                    float Valor = Sistema[i][j]/Sistema[j][j];
+                    double Valor = Sistema[i][j]/Sistema[j][j];
                     
                     // Fazendo a subtração para toda a linha:
                     for(int k = 0; k < colunas; k++) {
@@ -80,7 +80,7 @@ public class Escalonamento {
 
         // Agora que o sistema está escalonado, começa-se a encontrar o valor das incógnitas:
         System.out.println("\n-- Valor das incógnitas --");
-        float x, y, z;
+        double x, y, z;
 
         // Para se encontrar o valor de z, é só dividir o resultado da equação pelo coeficiente.
         // Dividindo:
@@ -162,11 +162,11 @@ public class Escalonamento {
     }
 
     // Método para validar entradas positivas
-    static float lerValorPositivo(Scanner scanner, String mensagem) {
-        float valor;
+    static double lerValorPositivo(Scanner scanner, String mensagem) {
+        double valor;
         do {
             System.out.print(mensagem);
-            valor = scanner.nextFloat();
+            valor = scanner.nextDouble();
             if (valor <= 0) {
                 System.out.println("Erro: O valor deve ser maior que zero. Tente novamente.");
             }
@@ -175,7 +175,7 @@ public class Escalonamento {
     }
 
     // Método para mostrar um sistema para o usuário:
-    static void mostrarSistema(float[][] Matriz) {
+    static void mostrarSistema(double[][] Matriz) {
 
         // Loop for percorre todas as linhas da matriz:
         for (int i = 0; i < Matriz.length; i++) {
@@ -184,7 +184,7 @@ public class Escalonamento {
             for (int j = 0; j < Matriz[i].length; j++) {
                 
                 // Valor, representa o atual elemento da matriz sendo utilizado pela iteração do Loop:
-                float valor = Matriz[i][j];
+                double valor = Matriz[i][j];
 
                 if(j == 0) {
                     System.out.print("{");
@@ -234,7 +234,7 @@ public class Escalonamento {
     }
 
     // Método simples para verificar resultados negativos:
-    static void verificarResultadosNegativos(float x, float y, float z) {
+    static void verificarResultadosNegativos(double x, double y, double z) {
         
         // Verificar se algum resultado é negativo:
         if(x < 0 || y < 0 || z < 0) {
@@ -253,6 +253,12 @@ public class Escalonamento {
             System.out.println("- Horas registradas incorretamente;");
             System.out.println("- Custos distribuídos de forma errada;"); 
             System.out.println("- Dados inconsistentes entre projetos.");
+        } else {
+            System.out.printf("\nHorários:\n");
+            System.out.printf("Sênior (x): R$ %.2f/h%n", x);
+            System.out.printf("Pleno (y):  R$ %.2f/h%n", y);
+            System.out.printf("Júnior (z): R$ %.2f/h%n", z);
+            System.out.print(".");
         }
     }
 
