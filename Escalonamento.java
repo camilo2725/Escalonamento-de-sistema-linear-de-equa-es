@@ -258,8 +258,8 @@ public class Escalonamento {
             System.out.printf("Sênior (x): R$ %.2f/h%n", x);
             System.out.printf("Pleno (y):  R$ %.2f/h%n", y);
             System.out.printf("Júnior (z): R$ %.2f/h%n", z);
-            System.out.print(".");
         }
     }
 
 }
+
