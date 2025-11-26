@@ -18,32 +18,22 @@ public class Escalonamento {
 
         // Começa a entrada dos valores do sistema por parte do usuário:
         System.out.println("-- Entrada das equações do sistema --");
-        System.out.print("Primeira equação (Ax + By + Cz = D), insira valor de A: ");
-        Sistema[0][0] = Entrada.nextFloat();
-        System.out.print("Insira valor de B: ");
-        Sistema[0][1] = Entrada.nextFloat();
-        System.out.print("Insira valor de C: ");
-        Sistema[0][2] = Entrada.nextFloat();
-        System.out.print("Insira valor de D: ");
-        Sistema[0][3] = Entrada.nextFloat();
+        Sistema[0][0] = lerValorPositivo(Entrada, "Primeira equação (Ax + By + Cz = D), insira valor de A: ");
+        Sistema[0][1] = lerValorPositivo(Entrada, "Insira valor de B: ");
+        Sistema[0][2] = lerValorPositivo(Entrada, "Insira valor de C: ");
+        Sistema[0][3] = lerValorPositivo(Entrada, "Insira valor de D: ");
 
-        System.out.print("\nSegunda equação (Ax + By + Cz = D), insira valor de A: ");
-        Sistema[1][0] = Entrada.nextFloat();
-        System.out.print("Insira valor de B: ");
-        Sistema[1][1] = Entrada.nextFloat();
-        System.out.print("Insira valor de C: ");
-        Sistema[1][2] = Entrada.nextFloat();
-        System.out.print("Insira valor de D: ");
-        Sistema[1][3] = Entrada.nextFloat();
+        // Segunda equação
+        Sistema[1][0] = lerValorPositivo(Entrada, "\nSegunda equação (Ax + By + Cz = D), insira valor de A: ");
+        Sistema[1][1] = lerValorPositivo(Entrada, "Insira valor de B: ");
+        Sistema[1][2] = lerValorPositivo(Entrada, "Insira valor de C: ");
+        Sistema[1][3] = lerValorPositivo(Entrada, "Insira valor de D: ");
 
-        System.out.print("\nTerceira equação (Ax + By + Cz = D), insira valor de A: ");
-        Sistema[2][0] = Entrada.nextFloat();
-        System.out.print("Insira valor de B: ");
-        Sistema[2][1] = Entrada.nextFloat();
-        System.out.print("Insira valor de C: ");
-        Sistema[2][2] = Entrada.nextFloat();
-        System.out.print("Insira valor de D: ");
-        Sistema[2][3] = Entrada.nextFloat();
+        // Terceira equação
+        Sistema[2][0] = lerValorPositivo(Entrada, "\nTerceira equação (Ax + By + Cz = D), insira valor de A: ");
+        Sistema[2][1] = lerValorPositivo(Entrada, "Insira valor de B: ");
+        Sistema[2][2] = lerValorPositivo(Entrada, "Insira valor de C: ");
+        Sistema[2][3] = lerValorPositivo(Entrada, "Insira valor de D: ");
 
         // Mostra como ficou o sistema para o usuário, utilizando um método criado com o único objetivo de mostrar sistemas de uma maneira amigavel:
         System.out.println("\nSistema: ");
@@ -164,8 +154,24 @@ public class Escalonamento {
 
         System.out.println("\nValor das incógnitas: x = " + x + "; y = " + y + "; z = " + z + ";");
 
+        // Verificar se algum dos valores é negativo:
+        verificarResultadosNegativos(x, y, z);
+
         // Fechar scanner:
         Entrada.close();
+    }
+
+    // Método para validar entradas positivas
+    static float lerValorPositivo(Scanner scanner, String mensagem) {
+        float valor;
+        do {
+            System.out.print(mensagem);
+            valor = scanner.nextFloat();
+            if (valor <= 0) {
+                System.out.println("Erro: O valor deve ser maior que zero. Tente novamente.");
+            }
+        } while (valor <= 0);
+        return valor;
     }
 
     // Método para mostrar um sistema para o usuário:
@@ -225,6 +231,29 @@ public class Escalonamento {
             System.out.println();
         }
 
+    }
+
+    // Método simples para verificar resultados negativos:
+    static void verificarResultadosNegativos(float x, float y, float z) {
+        
+        // Verificar se algum resultado é negativo:
+        if(x < 0 || y < 0 || z < 0) {
+            System.out.println("\n-- Verificação dos Resultados --");
+            if(x < 0) {
+                System.out.println("Erro: Sênior (x) deu um valor negativo. R$" + x);
+            }
+            if(y < 0) {
+                System.out.println("Erro: Pleno (y) deu um valor negativo. R$" + y);
+            }
+            if(z < 0) {
+                System.out.println("Erro: Júnior (z) deu um valor negativo. R$" + z);
+            }
+            
+            System.out.println("Possíveis causas:");
+            System.out.println("- Horas registradas incorretamente;");
+            System.out.println("- Custos distribuídos de forma errada;"); 
+            System.out.println("- Dados inconsistentes entre projetos.");
+        }
     }
 
 }
